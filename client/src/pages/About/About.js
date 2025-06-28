@@ -1,7 +1,8 @@
 import React from "react";
 import Jump from "react-reveal/Jump";
-// import Profile2 from "../../src/assets/images/profile1.JPG";
+import profilePic from '../../assets/images/AjitSahaye.jpg'; 
 import "./About.css";
+
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
         <div className="about" id="about">
           <div className="row">
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
-              <img src="../images/profile1.JPG" alt="myphoto" />
+              <img src={profilePic} alt="myphoto" />
             </div>
             <div className="col-md-6  col-xl-6 col-lg-6 col-xs-12 about-content">
               <h1>About Me</h1>

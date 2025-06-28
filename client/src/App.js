@@ -24,10 +24,10 @@ function App() {
         <Layout />
         <div className="container">
           <About />
-          <Education />
-          <Techstack />
-          <Projects />
-          <WorkExp />
+           <WorkExp />
+           <Projects />
+           <Techstack />
+          <Education /> 
           <Contacts />
         </div>
         <div className="footer pb-3 ms-3 ">

@@ -27,7 +27,7 @@ const handleTheme = () => {
           <Typewriter
             options={{
               strings: 
-              ['Cybersecuity Engineer'],
+              ['Cybersecurity Engineer'],
               autoStart: true,
               loop: true,
             }}
@@ -37,7 +37,7 @@ const handleTheme = () => {
         <div className='home-buttons'>
         <a
                 className="btn btn-hire"
-                href="https://api.whatsapp.com/send?phone=7893951328"
+                href="https://api.whatsapp.com/send?phone=+15712688792&text=Hi%20Ajit%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
                 rel="noreferrer"
                 target="_blank"
               >

@@ -82,7 +82,7 @@ const Contacts = () => {
                   <h6>
                     Contact With
                     <a
-                      href="https://www.linkedin.com/in/ajitkumarak"
+                      href="https://www.linkedin.com/in/ajitsahaye"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
