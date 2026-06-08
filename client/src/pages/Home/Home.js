@@ -27,12 +27,13 @@ const handleTheme = () => {
           <Typewriter
             options={{
               strings: 
-              ['Cybersecurity Engineer'],
+              [ "Cybersecurity Analyst", "SOC Analyst", "Blue Team Professional", "Incident Response Analyst", ],
               autoStart: true,
               loop: true,
             }}
           />
         </h1>
+        <h4> SOC Operations • Threat Detection • Incident Response • Cloud Security </h4>
         </Fade>
         <div className='home-buttons'>
         <a

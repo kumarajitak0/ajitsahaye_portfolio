@@ -22,7 +22,7 @@ const Education = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#BFC9CA", color: "black" }}
             contentArrowStyle={{ borderRight: "7px solid white" }}
-            date="2025 - Present"
+            date="Jan 2025 - Sep 2025"
             dateClassName="colzdatecolor"
             iconStyle={{ background: "#138781", color: "#fff" }}
             icon={<MdSchool />}
@@ -39,7 +39,7 @@ const Education = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#BFC9CA", color: "black" }}
             contentArrowStyle={{ borderRight: "7px solid white" }}
-            date="2018-2022"
+            date="July 2018  - June 2022"
             dateClassName="twelvedatecolor"
             iconStyle={{ background: "#138781", color: "#fff" }}
             icon={<MdSchool />}

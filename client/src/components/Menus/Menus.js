@@ -3,7 +3,7 @@ import "./Menus.css";
 import {Link} from "react-scroll";
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
-import profilePic from '../../assets/images/AjitSahaye.jpg';
+import profilePic from '../../assets/images/AjitSahaye.png';
 import {FcHome, 
   FcAbout,
    FcPortraitMode,

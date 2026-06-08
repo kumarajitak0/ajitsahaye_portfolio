@@ -1,8 +1,0 @@
-[built]
-  base = "client"
-  publish = "client/built"
-  command = "npm run built"
-
-# Explicitly disable functions directory
-[functions]
-  directory = ""

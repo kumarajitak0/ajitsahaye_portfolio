@@ -4,94 +4,179 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <>
+      {" "}
       <div className="container project" id="projects">
+        {" "}
         <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
-          Cybersecurity Projects
-        </h2>
+          Featured Security Projects{" "}
+        </h2>{" "}
         <hr />
         <p className="pb-3 text-center">
-          These projects demonstrate my capabilities in offensive and defensive
-          cybersecurity practices, integrating real-world techniques such as
-          vulnerability exploitation, AI-based threat detection, and secure
-          system development across databases, cloud platforms, and operating
-          systems.
+          Projects focused on SOC operations, alert triage, threat detection,
+          incident response, security automation, cloud security, and
+          AI-assisted security solutions. These projects highlight practical
+          experience in building tools and workflows for monitoring,
+          investigation, root cause analysis, threat detection, and improving
+          operational security within enterprise environments.
         </p>
-
         <div className="row" id="ads">
           {/* Project 1 */}
           <div className="col-md-4">
-            <div className="card rounded">
+            <div className="card rounded project-card">
               <div className="card-image">
-                <span className="card-notify-badge">AI Threat Analyzer</span>
+                <span className="card-notify-badge">SOC Automation</span>
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkQlfFDXx6vxG81NHfA97Bu7H7fZqzDbUPw&s"
-                  alt="AI-Based Threat Analyzer"
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                  alt="Enterprise AI SecOps Copilot"
                 />
               </div>
+
               <div className="card-image-overly m-auto mt-3">
                 <span className="card-detail-badge">Python</span>
-                <span className="card-detail-badge">AI/ML</span>
-                <span className="card-detail-badge">Port Scanning</span>
-                <span className="card-detail-badge">SQL Security</span>
+                <span className="card-detail-badge">FastAPI</span>
+                <span className="card-detail-badge">Splunk</span>
+                <span className="card-detail-badge">MITRE ATT&CK</span>
               </div>
+
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
                   <h5 className="text-uppercase">
-                    AI-Based Cyber Threat Analyzer
+                    Enterprise AI SecOps Copilot
                   </h5>
                 </div>
+
+                <p>
+                  AI-powered SOC platform for alert triage, MITRE ATT&CK
+                  mapping, incident investigation, and root cause analysis using
+                  Splunk and local LLMs.
+                </p>
+
+                <a
+                  href="https://github.com/kumarajitak0/enterprise-ai-secops-copilot"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-dark btn-sm mx-1 project-btn"
+                >
+                  GitHub Repo
+                </a>
+
+                <button
+                  className="btn btn-secondary btn-sm mx-1 project-btn disabled"
+                  disabled
+                >
+                  Case Study Soon
+                </button>
+
+                <p className="project-note">
+                  Demo available through documentation and screenshots.
+                </p>
               </div>
             </div>
           </div>
 
           {/* Project 2 */}
           <div className="col-md-4">
-            <div className="card rounded">
+            <div className="card rounded project-card">
               <div className="card-image">
-                <span className="card-notify-badge">Blue Team</span>
+                <span className="card-notify-badge">AI Security</span>
                 <img
-                  src="https://images.ctfassets.net/aoyx73g9h2pg/uRTu5qU5D27tfJGs3tcde/48cb4fe2403b0b3985a2ab1059aafa8b/What-is-Port-445-Diagram.png"
-                  alt="SMBv1 Exploit"
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                  alt="LLM Prompt Injection Firewall"
                 />
               </div>
+
               <div className="card-image-overly m-auto mt-3">
-                <span className="card-detail-badge">kali linux</span>
-                <span className="card-detail-badge">SMBv1</span>
-                <span className="card-detail-badge">Windows Server</span>
-                <span className="card-detail-badge">Wireshark</span>
+                <span className="card-detail-badge">LLM Security</span>
+                <span className="card-detail-badge">Python</span>
+                <span className="card-detail-badge">SQLite</span>
+                <span className="card-detail-badge">OWASP LLM</span>
               </div>
+
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
                   <h5 className="text-uppercase">
-                    Exploiting SMBv1 on Windows Server
+                    LLM Prompt Injection Firewall
                   </h5>
                 </div>
+
+                <p>
+                  Security solution designed to detect and block prompt
+                  injection attacks using regex analysis, semantic validation,
+                  and LLM security controls.
+                </p>
+
+                <a
+                  href="https://github.com/kumarajitak0/llm-prompt-injection-firewall"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-dark btn-sm mx-1 project-btn"
+                >
+                  GitHub Repo
+                </a>
+
+                <button
+                  className="btn btn-secondary btn-sm mx-1 project-btn disabled"
+                  disabled
+                >
+                  Case Study Soon
+                </button>
+
+                <p className="project-note">
+                  Demo available through documentation and screenshots.
+                </p>
               </div>
             </div>
           </div>
 
           {/* Project 3 */}
           <div className="col-md-4">
-            <div className="card rounded">
+            <div className="card rounded project-card">
               <div className="card-image">
-                <span className="card-notify-badge">Database Security</span>
+                <span className="card-notify-badge">Threat Detection</span>
                 <img
-                  src="https://www.insecure.in/images/cover/privilege-escalation-attack.webp"
-                  alt="MySQL Exploit"
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+                  alt="SMBv1 Exploitation and Detection Lab"
                 />
               </div>
+
               <div className="card-image-overly m-auto mt-3">
-                <span className="card-detail-badge">MySQL</span>
-                <span className="card-detail-badge">SQL Injection</span>
+                <span className="card-detail-badge">Metasploit</span>
                 <span className="card-detail-badge">Wireshark</span>
-                <span className="card-detail-badge">Privilege Escalation</span>
+                <span className="card-detail-badge">SMBv1</span>
+                <span className="card-detail-badge">Windows Server</span>
               </div>
+
               <div className="card-body text-center">
                 <div className="ad-title m-auto">
                   <h5 className="text-uppercase">
-                    MySQL Privilege Escalation Exploit
+                    SMBv1 Exploitation & Detection Lab
                   </h5>
                 </div>
+
+                <p>
+                  Performed SMBv1 attack simulation, packet analysis, blue team
+                  detection development using Wireshark and Metasploit.
+                </p>
+
+                <a
+                  href="https://github.com/kumarajitak0/smbv1-exploit-lab"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-dark btn-sm mx-1 project-btn"
+                >
+                  GitHub Repo
+                </a>
+
+                <button
+                  className="btn btn-secondary btn-sm mx-1 project-btn disabled"
+                  disabled
+                >
+                  Case Study Soon
+                </button>
+
+                <p className="project-note">
+                  Demo available through documentation and screenshots.
+                </p>
               </div>
             </div>
           </div>

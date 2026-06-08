@@ -1,158 +1,131 @@
-import React, { useState } from "react";
-import { toast } from "react-toastify";
-import axios from "axios";
+import React from "react";
 import "./Contacts.css";
-import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaSquareWhatsapp } from "react-icons/fa6";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { MdSecurity } from "react-icons/md";
 
-const Contacts = () => {
-  const [name, setname] = useState("");
-  const [email, setEmail] = useState("");
-  const [msg, setMsg] = useState("");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!name || !email || !msg) {
-      toast.error("Please fill out all fields");
-      return;
-    }
-
-    try {
-      const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/v1/portfolio/sendEmail`,
-        {
-          name,
-          email,
-          msg,
-        }
-      );
-
-      if (res.data.success) {
-        toast.success(res.data.message);
-        setname("");
-        setEmail("");
-        setMsg("");
-      } else {
-        toast.error(res.data.message);
-      }
-    } catch (error) {
-      console.error(error);
-      toast.error("Something went wrong.");
-    }
-  };
-
-  const whatsappLink = `https://api.whatsapp.com/send?phone=+15712688792&text=Hi%20Ajit%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.`;
-
+const Contact = () => {
   return (
-    <div className="contact" id="contacts">
-      <div className="card card0 border-0">
-        <div className="row">
-          {/* LEFT SIDE - WhatsApp and Gmail Info */}
-          <div className="col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
-            <div className="text-center p-3">
-              <h4>📱 WhatsApp:</h4>
+    <div className="contact" id="contact">
+      <div className="container contact-container">
+        <h2 className="text-center text-uppercase">Contact Me</h2>
+        <hr />
+        <div className="contact-box">
+          <div className="contact-left">
+            <h3>
+              <MdSecurity /> Let's Connect
+            </h3>
+
+            <p className="contact-intro">
+              Cybersecurity professional specializing in Security Operations,
+              Incident Response, Alert Triage, Threat Detection, Cloud Security,
+              and Enterprise Payment Security.
+            </p>
+
+            <h4>
+              <FaEnvelope /> Email
+            </h4>
+
+            <p className="contact-email">
+              <a href="mailto:sahayeajit@gmail.com">sahayeajit@gmail.com</a>
+            </p>
+
+            <h4>
+              <FaPhoneAlt /> Phone
+            </h4>
+
+            <p>
+              <a href="tel:+15712688792">+1 (571) 268-8792</a>
+            </p>
+
+            <h4>
+              <FaWhatsapp /> WhatsApp
+            </h4>
+
+            <p>
               <a
-                href={whatsappLink}
+                href="https://wa.me/15712688792"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-success mt-2 mb-3"
+                rel="noreferrer"
               >
-                Message on WhatsApp{" "}
-                <FaSquareWhatsapp className="ms-2" size={20} />
+                Chat on WhatsApp
               </a>
-              <h4>📧 Gmail:</h4>
-              <p
-                style={{
-                  fontSize: "18px",
-                  fontWeight: "bold",
-                  color: "#D44638",
-                }}
-              >
-                ajitsahaye@gmail.com
-              </p>
-            </div>
+            </p>
+
+            <h4>
+              <FaMapMarkerAlt /> Location
+            </h4>
+
+            <p>Virginia, USA</p>
+
+            <p className="contact-note">
+              Open to SOC Analyst, Cybersecurity Analyst, Blue Team, Cloud
+              Security, and Security Operations opportunities.
+            </p>
           </div>
 
-          {/* RIGHT SIDE - Contact Form */}
-          <div className="col-lg-6 col-md-6">
-            <div className="card2 d-flex card border-0 px-4 py-5">
-              <div className="row">
-                <div className="row mb-3">
-                  <h6>
-                    Contact With
-                    <a
-                      href="https://www.linkedin.com/in/ajitsahaye"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <BsLinkedin color="blue" size={30} className="ms-2" />
-                    </a>
-                    <a
-                      href="https://github.com/kumarajitak0"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <BsGithub color="black" size={30} className="ms-2" />
-                    </a>
-                    <a
-                      href="https://www.facebook.com/KumarAjitER77"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <BsFacebook color="blue" size={30} className="ms-2" />
-                    </a>
-                  </h6>
-                </div>
+          <div className="contact-right">
+            <h4>Professional Profiles</h4>
 
-                <div className="row px-3 mb-4">
-                  <div className="line" />
-                  <small className="or text-center">OR</small>
-                  <div className="line" />
-                </div>
+            <div className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/ajitsahaye/"
+                target="_blank"
+                rel="noreferrer"
+                title="LinkedIn"
+              >
+                <FaLinkedin />
+              </a>
 
-                <form onSubmit={handleSubmit}>
-                  <div className="row px-3">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Enter your Name"
-                      className="mb-3 form-control"
-                      value={name}
-                      onChange={(e) => setname(e.target.value)}
-                    />
-                  </div>
+              <a
+                href="https://github.com/kumarajitak0"
+                target="_blank"
+                rel="noreferrer"
+                title="GitHub"
+              >
+                <FaGithub />
+              </a>
 
-                  <div className="row px-3">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Enter your Email"
-                      className="mb-3 form-control"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </div>
+              <a href="mailto:sahayeajit@gmail.com" title="Email">
+                <FaEnvelope />
+              </a>
 
-                  <div className="row px-3">
-                    <textarea
-                      name="msg"
-                      placeholder="Write your message"
-                      className="mb-3 form-control"
-                      rows="4"
-                      value={msg}
-                      onChange={(e) => setMsg(e.target.value)}
-                    />
-                  </div>
-
-                  <div className="row px-3">
-                    <button type="submit" className="btn btn-primary w-100">
-                      Send Message
-                    </button>
-                  </div>
-                </form>
-              </div>
+              <a
+                href="https://wa.me/15712688792"
+                target="_blank"
+                rel="noreferrer"
+                title="WhatsApp"
+              >
+                <FaWhatsapp />
+              </a>
             </div>
+
+            <div className="message-title">Message</div>
+
+            <form action="https://formspree.io/f/meewgbrv" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
           </div>
         </div>
       </div>
@@ -160,4 +133,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default Contact;

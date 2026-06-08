@@ -14,8 +14,12 @@ const Techstack = () => {
           </h2>
           <hr />
           <p className="pb-3 text-center">
-            👉 Including programming Languages, Frameworks, Databases, back-end
-            tools, Network Analysis, Packet Capture and APIs
+            Security operations and blue team technologies used for monitoring,
+            investigation, threat detection, incident response, cloud security,
+            and operational support. Includes enterprise platforms and tools
+            such as Splunk Enterprise, IBM Safer Payments, Grafana, AWS
+            Security, Linux, Python, Wireshark, Nmap, SQL, and MITRE ATT&CK,
+            supporting real-world security monitoring and analysis workflows.
           </p>
         </RubberBand>
         <div className="row">

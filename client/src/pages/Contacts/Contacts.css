@@ -1,129 +1,193 @@
- .contact {
-  margin-left: 130px;
+/* ================= CONTACT MAIN SECTION ================= */
+
+.contact {
+  margin-top: 40px;
   margin-bottom: 60px;
-  padding-top: 50px;
+  padding-left: 140px;
 }
-.contact .card2
-{
-  background-color: #E5E7E9;
+
+.contact-container {
+  max-width: 1000px;
 }
-.card0 {
-  box-shadow: 0px 4px 8px 0px #757575;
-  border-radius: 0px;
+
+.contact h2 {
+  font-weight: bold;
+  color: #138781;
 }
-.card2 {
-  margin: 0px 40px;
+
+.contact hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
 }
-.card1 .image {
-  padding: 30px;
-  margin-top: 30px;
-  height: 100%;
+
+/* ================= CONTACT CARD WRAPPER ================= */
+
+.contact-box {
+  display: flex;
+  background: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= LEFT SIDE CONTACT INFO ================= */
+
+.contact-left {
+  width: 58%;
+  padding: 70px 45px;
+  text-align: center;
+}
+
+.contact-left h3 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.contact-intro {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-left h4 {
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.contact-email {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.contact-note {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ================= RIGHT SIDE FORM AREA ================= */
+
+.contact-right {
+  width: 42%;
+  background: #e0e0e0;
+  padding: 70px 35px;
+  text-align: center;
+}
+
+.social-icons {
+  margin: 15px 0 25px 0;
+}
+
+.social-icons a {
+  font-size: 34px;
+  margin: 0 8px;
+  color: black;
+}
+
+.message-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* ================= FORM INPUTS ================= */
+
+.contact-right input,
+.contact-right textarea {
   width: 100%;
-}
-.border-line
-{
-    border-right: 1px solid #e0e0e0;
-}
-.line {
-  height: 1px;
-  width: 45%;
-  background-color: #e0e0e0;
-  margin-top: 10px;
-}
-.or 
-{
-    display: flex;
-    width: 10%;
-    font-weight: bold;
-}
-::placeholder
-{
-    color: black;
-    opacity: 1.5; 
-    font-weight: 300;
-} 
-input,textarea
-{
-border: 1px solid rgba(121, 213, 230, 0.801);
-border-radius: 2px;
-width: 100%;
-color: #138781;
-font-size: 1rem;
-letter-spacing: 1px;
-}
-input:focus,textarea:focus
-{
-    box-shadow: none !important;
-    outline: 1px solid #138781 !important;
-    outline-width: 0px;
-}
-button:focus
-{
-    box-shadow: none;
-    outline-width: 0px;
-}
-.button{
-background-color: #1e1e2c;
-color: white;
-border-radius: 5px;
-margin-top: 15px;
-padding: 10px;
-}
-.button:hover
-{
-    background-color: #000;
-    color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 16px;
 }
 
-.contact .row h6
-{
-  padding-top: 50px;
+.contact-right textarea {
+  height: 150px;
 }
 
-/* ############### For DARK MODE only ######## */
-#dark .contact 
-{
+.contact-right input:focus,
+.contact-right textarea:focus {
+  box-shadow: none !important;
+  outline: 1px solid #138781 !important;
+}
+
+/* ================= BUTTON ================= */
+
+.contact-right button {
+  width: 100%;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.contact-right button:hover {
+  background: #084fc7;
+}
+
+/* ================= DARK MODE ================= */
+
+#dark .contact {
   background-color: #132d3f;
   color: white;
 }
-#dark .row .card
-{
+
+#dark .contact-box {
   background-color: #132d3f;
-  color:white
+  color: white;
 }
 
-#dark .card0
-{
-  background-color: #132d3f;
-  color:white;
+#dark .contact-right {
+  background-color: #1e3a4d;
+  color: white;
 }
 
-#dark .mb-3
-{
+#dark .social-icons a {
+  color: white;
+}
+
+#dark .contact-right input,
+#dark .contact-right textarea {
   background-color: #757575;
-  color: whitesmoke;
-}
-#dark ::placeholder
-{
   color: white;
-  opacity: 1.5; 
-  font-weight: 300; 
 }
 
-/* ===========MOBILE VIEW============= */
+#dark .contact-right input::placeholder,
+#dark .contact-right textarea::placeholder {
+  color: white;
+}
+
+/* ================= MOBILE VIEW ================= */
+
 @media (max-width: 600px) {
   .contact {
     margin: 0;
-    padding: 0;
-    margin-top: 50px;
-  }
-  .contact .card2 {
-    margin: 0;
+    padding-left: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 
-  .contact .card2 h6 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .contact-container {
+    max-width: 100%;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    padding: 35px 25px;
+  }
+
+  .contact-intro {
+    font-size: 15px;
+  }
+
+  .social-icons a {
+    font-size: 30px;
   }
 }

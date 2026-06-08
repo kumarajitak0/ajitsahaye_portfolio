@@ -101,7 +101,27 @@
     cursor: pointer;
 }
 
+/* ===============For cards only================= */
+.project-card {
+  min-height: 560px;
+}
 
+.project .card-image img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project .card-body {
+  padding-bottom: 10px;
+}
+
+.project-note {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #666;
+}
 
 /* ================MOBILE VIEW=============== */
 @media (max-width: 600px) {

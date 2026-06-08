@@ -1,6 +1,6 @@
 import React from "react";
 import Jump from "react-reveal/Jump";
-import profilePic from '../../assets/images/AjitSahaye.jpg'; 
+import profilePic from '../../assets/images/AjitSahaye.png'; 
 import "./About.css";
 
 
@@ -16,17 +16,7 @@ const About = () => {
             <div className="col-md-6  col-xl-6 col-lg-6 col-xs-12 about-content">
               <h1>About Me</h1>
               <p>
-                I'm Ajit Sah, a cybersecurity enthusiast pursuing a Master's in
-                Cybersecurity with 2.5 years of experience as a full-stack
-                developer. I specialize in securing systems and networks through
-                proactive and reactive techniques. My hands-on skills include
-                tools like Wireshark, Metasploit, Nmap, Burp Suite, and working
-                knowledge of AI-driven threat detection, AWS (EC2, S3, IAM), and
-                network traffic analysis. I’m well-versed in the CIA Triad, OSI
-                model, firewalls, subnetting, and DNS, and have experience with
-                SailPoint for identity governance. I enjoy scripting in Python
-                for log analysis and automating threat response. I’m seeking
-                internships to apply and expand my cybersecurity expertise.
+                I am a Cybersecurity Professional with 2+ years of experience in Security Operations, Blue Team Defense, Incident Response, and Enterprise Payment Security. My work focuses on alert triage, security monitoring, threat detection, log analysis, incident investigation, and root cause analysis across high-availability production environments. I have hands-on experience with Splunk Enterprise, IBM Safer Payments, Grafana, AWS Security, Linux, Python, and SIEM-based investigation workflows. My background includes supporting enterprise fraud detection platforms, monitoring critical infrastructure, and responding to operational and security incidents. I am passionate about SOC operations, threat detection, cloud security, security automation, and building practical blue team solutions that improve enterprise security posture.
               </p>
             </div>
           </div>

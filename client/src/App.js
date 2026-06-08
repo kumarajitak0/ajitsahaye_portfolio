@@ -24,15 +24,17 @@ function App() {
         <Layout />
         <div className="container">
           <About />
-           <WorkExp />
-           <Projects />
-           <Techstack />
-          <Education /> 
+          <WorkExp />
+          <Projects />
+          <Techstack />
+          <Education />
           <Contacts />
         </div>
         <div className="footer pb-3 ms-3 ">
           <Tada>
-            <h5 className="text-center">Made By Ajit sah &copy; 2025</h5>
+            <h5 className="text-center">
+              © 2026 Ajit Sahaye | Cybersecurity Portfolio
+            </h5>
           </Tada>
         </div>
       </div>
